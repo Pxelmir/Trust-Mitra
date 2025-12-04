@@ -1,5 +1,5 @@
-"use client"
-import { Shield } from "lucide-react"
+"use client";
+import { Shield } from "lucide-react";
 
 export default function Header({ onGetStarted }) {
   return (
@@ -7,8 +7,8 @@ export default function Header({ onGetStarted }) {
       <div className="flex items-center justify-between max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full">
-            <Shield className="w-6 h-6 text-white" />
+          <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full">
+            <img src="/Home/logo.jpeg" alt="logo" />
           </div>
           <span className="text-xl font-bold text-red-600">Trust Mitra</span>
         </div>
@@ -49,6 +49,34 @@ export default function Header({ onGetStarted }) {
           </button>
         </div>
       </div>
+      <nav className="border-b border-gray-200 bg-white px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-center space-x-8">
+          <a
+            href="#"
+            className="text-lg font-medium text-gray-800 hover:text-red-600"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-lg font-medium text-gray-800 hover:text-red-600"
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            className="text-lg font-medium text-gray-800 hover:text-red-600"
+          >
+            About Us
+          </a>
+          <a
+            href="#"
+            className="text-lg font-medium text-gray-800 hover:text-red-600"
+          >
+            Contact Us
+          </a>
+        </div>
+      </nav>
     </header>
-  )
+  );
 }

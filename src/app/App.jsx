@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import Header from "@/components/Header"
-import Hero from "@/components/Home"
+import Home from "@/components/Home"
+import Footer from "@/components/Footer"
 import RoleSelection from "@/components/RoleSelection"
 import RegistrationFlow from "@/components/RegistrationFlow"
 
@@ -29,7 +30,8 @@ export default function App() {
       {currentPage === "home" && (
         <>
           <Header onGetStarted={handleGetStarted} />
-          <Hero onGetStarted={handleGetStarted} />
+          <Home onGetStarted={handleGetStarted} />
+          <Footer onGetStarted={handleGetStarted}/>
         </>
       )}
       {currentPage === "roles" && <RoleSelection onRoleSelect={handleRoleSelect} onBack={handleBackToHome} />}
